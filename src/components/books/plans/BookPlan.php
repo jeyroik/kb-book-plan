@@ -1,7 +1,9 @@
 <?php
 namespace extas\components\books\plans;
 
+use extas\components\books\authors\THasAuthors;
 use extas\components\books\plans\progress\BookPlanProgress;
+use extas\components\books\THasBook;
 use extas\components\plans\Plan;
 use extas\interfaces\books\plans\IBookPlan;
 use extas\interfaces\books\plans\progress\IBookPlanProgressRepository;
@@ -15,6 +17,9 @@ use extas\interfaces\plans\progress\IPlanProgress;
  */
 class BookPlan extends Plan implements IBookPlan
 {
+    use THasBook;
+    use THasAuthors;
+
     protected $planProgressRepo = IBookPlanProgressRepository::class;
 
     /**
