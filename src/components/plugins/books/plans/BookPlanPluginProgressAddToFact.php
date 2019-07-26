@@ -1,7 +1,7 @@
 <?php
 namespace extas\components\plugins\books\plans;
 
-use df\components\plugins\plans\PlanPluginProgressAddToFact;
+use extas\components\plugins\plans\PlanPluginProgressAddToFact;
 use extas\components\books\plans\facts\BookPlanFact;
 use extas\interfaces\books\plans\facts\IBookPlanFactRepository;
 use extas\interfaces\plans\facts\IPlanFact;
