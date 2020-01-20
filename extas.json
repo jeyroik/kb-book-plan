@@ -16,6 +16,18 @@
   ],
   "plugins": [
     {
+      "class": "extas\\components\\plugins\\PluginInstallBookPlans",
+      "stage": "extas.install"
+    },
+    {
+      "class": "extas\\components\\plugins\\PluginInstallBookPlanFacts",
+      "stage": "extas.install"
+    },
+    {
+      "class": "extas\\components\\plugins\\PluginInstallBookPlanProgress",
+      "stage": "extas.install"
+    },
+    {
       "class": "extas\\components\\plugins\\books\\plans\\BookPlanPluginProgressAddToFact",
       "stage": "kb.book.plan.progress.added"
     },
